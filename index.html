@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+    <div class="container">
+        <h1>Sales Tracker</h1>
+
+        <form id="leadForm">
+            <label>Lead Name</label>
+            <input type="text" id="leadName" required>
+
+            <label>Lead Contact</label>
+            <input type="text" id="leadContact" required>
+
+            <label>Outcome</label>
+            <select id="outcome">
+                <option value="Pitched">Pitched</option>
+                <option value="Bought">Bought</option>
+            </select>
+
+            <label>Rep</label>
+            <select id="rep">
+                <option value="Carl">Carl</option>
+                <option value="Luca">Luca</option>
+                <option value="Camila">Camila</option>
+                <option value="Jonathan">Jonathan</option>
+                <option value="Edward">Edward</option>
+                <option value="Greg">Greg</option>
+                <option value="Martin">Martin</option>
+                <option value="Brandon">Brandon</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+
+        <p id="statusMessage"></p>
+    </div>
+
+    <script type="module" src="script.js"></script>
+</body>
+</html>
