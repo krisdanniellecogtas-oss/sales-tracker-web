@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sales Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+
+<div class="dashboard-container">
+
+    <h1 class="title">Sales Dashboard</h1>
+
+    <!-- KPI Cards -->
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <h2>Daily Pitches</h2>
+            <p id="dailyPitches">0</p>
+        </div>
+        <div class="kpi-card">
+            <h2>Daily Bought</h2>
+            <p id="dailyBought">0</p>
+        </div>
+        <div class="kpi-card">
+            <h2>Daily Conversion</h2>
+            <p id="dailyConv">0%</p>
+        </div>
+    </div>
+
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <h2>Weekly Pitches</h2>
+            <p id="weeklyPitches">0</p>
+        </div>
+        <div class="kpi-card">
+            <h2>Weekly Bought</h2>
+            <p id="weeklyBought">0</p>
+        </div>
+        <div class="kpi-card">
+            <h2>Weekly Conversion</h2>
+            <p id="weeklyConv">0%</p>
+        </div>
+    </div>
+
+    <div class="kpi-row">
+        <div class="kpi-card">
+            <h2>MTD Pitches</h2>
+            <p id="mtdPitches">0</p>
+        </div>
+        <div class="kpi-card">
+            <h2>MTD Bought</h2>
+            <p id="mtdBought">0</p>
+        </div>
+        <div class="kpi-card">
+            <h2>MTD Conversion</h2>
+            <p id="mtdConv">0%</p>
+        </div>
+    </div>
+
+    <!-- Charts -->
+    <h2 class="section-title">Daily Trend</h2>
+    <canvas id="dailyTrendChart"></canvas>
+
+    <h2 class="section-title">Per-Rep Performance</h2>
+    <canvas id="repChart"></canvas>
+
+    <!-- Table -->
+    <h2 class="section-title">Rep Performance Table</h2>
+    <table class="rep-table">
+        <thead>
+            <tr>
+                <th>Rep</th>
+                <th>Pitched</th>
+                <th>Bought</th>
+                <th>Conversion</th>
+            </tr>
+        </thead>
+        <tbody id="repTableBody"></tbody>
+    </table>
+
+</div>
+
+<script type="module" src="dashboard.js"></script>
+</body>
+</html>
